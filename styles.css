@@ -725,6 +725,24 @@ a {
 
 /* Responsive */
 @media (max-width: 1000px) {
+    .navbar {
+        background-color: rgba(248, 247, 244, 0.98) !important;
+        padding: 1rem 1.5rem !important;
+    }
+
+    .logo-sub {
+        display: none;
+    }
+
+    .logo-main {
+        font-size: 1.4rem;
+    }
+
+    .logo-icon {
+        width: 48px;
+        height: 48px;
+    }
+
     .hamburger {
         display: block;
     }
