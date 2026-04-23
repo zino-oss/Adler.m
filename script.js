@@ -78,4 +78,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Auto-collapse logo text into icon after 3.5 seconds
+    const logo = document.querySelector('.custom-logo');
+    if (logo) {
+        setTimeout(() => {
+            logo.classList.add('logo-collapsed');
+        }, 3500);
+    }
 });
