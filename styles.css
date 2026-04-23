@@ -547,12 +547,20 @@ a {
 .blog-card {
     display: flex;
     flex-direction: column;
+    background: var(--color-bg-light);
+    /* Pure white to separate from off-white body */
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Clean stroke edge */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
+    /* Rich soft shadow */
     transition: var(--transition-smooth);
-    border-radius: 20px;
+    overflow: hidden;
 }
 
 .blog-card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.06);
 }
 
 .blog-card:hover .blog-image img {
@@ -562,11 +570,11 @@ a {
 .blog-image {
     width: 100%;
     aspect-ratio: 16/10;
-    border-radius: 20px;
+    border-radius: 0;
     overflow: hidden;
-    margin-bottom: 2rem;
-    box-shadow: var(--shadow-elegant);
+    margin-bottom: 1.5rem;
     position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .blog-image img {
@@ -574,6 +582,10 @@ a {
     height: 100%;
     object-fit: cover;
     transition: transform 1.5s ease;
+}
+
+.blog-content {
+    padding: 0 2rem 2.5rem 2rem;
 }
 
 .blog-meta {
@@ -726,8 +738,12 @@ a {
 /* Responsive */
 @media (max-width: 1000px) {
     .navbar {
-        background-color: rgba(248, 247, 244, 0.98) !important;
+        background-color: var(--color-bg-light) !important;
+        /* Pure white contrast */
         padding: 1rem 1.5rem !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        /* Distinction from scroll content */
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
     }
 
     .logo-sub {
