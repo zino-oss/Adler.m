@@ -1,6 +1,7 @@
 /* Blog Post Page Typography - Luxury Aesthetic */
 .post-container {
-    padding-top: 10vh;
+    padding-top: 150px;
+    /* Strongly clears navbar height under all screen aspect ratios */
 }
 
 .post-meta {
